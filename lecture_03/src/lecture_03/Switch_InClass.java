@@ -8,10 +8,10 @@ public class Switch_InClass {
 
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("insert base");
+		System.out.println("Insert base");
 		int base = scan.nextInt();
 
-		System.out.println("insert power");
+		System.out.println("Insert power");
 		int power = scan.nextInt();
 
 		int result = base;
@@ -29,7 +29,6 @@ public class Switch_InClass {
 			case 3:
 				result = base * base * base;
 				break;
-	
 			default:
 				result = base;
 				System.out.println("Invalid input");

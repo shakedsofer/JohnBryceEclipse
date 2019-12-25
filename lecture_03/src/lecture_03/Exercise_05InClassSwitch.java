@@ -8,9 +8,9 @@ public class Exercise_05InClassSwitch {
 		Scanner scan = new Scanner(System.in);
 
 		System.out.println("Give your coffie choise");
-		int coffie = scan.nextInt();
-
-		switch (coffie) {
+		int coffee = scan.nextInt();
+			
+		switch (coffee) {
 		case 1:
 			System.out.println("Black coffie");
 			break;
@@ -21,16 +21,12 @@ public class Exercise_05InClassSwitch {
 			System.out.println("Makiatto");
 			break;
 		case 4:
-			System.out.println("Sold out");
-			break;
 		case 5:
-			System.out.println("Sold out");
-			break;
 		case 6:
 			System.out.println("Sold out");
 			break;
 		default:
-			coffie = -1;
+			coffee = -1;
 			System.out.println("Invalid input");
 			break;
 		}

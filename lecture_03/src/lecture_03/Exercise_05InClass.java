@@ -22,23 +22,20 @@ public class Exercise_05InClass {
 		Scanner scan = new Scanner(System.in);
 
 		System.out.println("Give your coffie choise");
-		int coffie = scan.nextInt();
+		int coffee = scan.nextInt();
 
-		if (coffie > 6 || coffie < 0) {
+		if (coffee > 6 || coffee < 0) {
 			System.out.println("Give me your real choise coffie!!");
-		
-			
-		} else if (coffie  > 1 ) {
+		} else if (coffee == 1) {
 			System.out.println("Black coffie");
-		} else if (coffie == 3 ) {
+		} else if (coffee == 3) {
 			System.out.println("Makiatto");
-		} else if (coffie == 2 ) {
+		} else if (coffee == 2) {
 			System.out.println("Aspresso");
 		} else {
 			System.out.println("Sold out");
 		}
-		scan.close();	
+	
+		scan.close();
 	}
 }
-
-

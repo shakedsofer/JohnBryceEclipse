@@ -8,20 +8,20 @@ public class Exercise_04InClass {
 
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Give me your number grade");
+		System.out.println("Give me your grade");
 
-		int x = scan.nextInt();
+		int grade = scan.nextInt();
 
 		scan.close();
 
-		if (x > 100 || x < 0) {
+		if (grade > 100 || grade < 0) {
 			System.out.println("Give me your real number grade!!");
 
-		} else if (x > 89) {
+		} else if (grade >= 90) {
 			System.out.println("Excellent");
-		} else if (x < 91 && x > 69) {
+		} else if (grade <= 90 && grade >= 70) {
 			System.out.println("Very good");
-		} else if (x <= 69 && x >= 60) {
+		} else if (grade <= 70 && grade >= 60) {
 			System.out.println("Good");
 		} else {
 			System.out.println("Fail");
