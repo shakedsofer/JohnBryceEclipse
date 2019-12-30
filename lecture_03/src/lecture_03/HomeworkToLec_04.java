@@ -14,7 +14,7 @@ public class HomeworkToLec_04 {
 
 		scan.close();
 
-		if (salary >= 5000 && salary <= 6000) {
+		if (salary >= 5000 && salary < 6000) {
 
 			double raisedSalary = salary * 0.1;
 

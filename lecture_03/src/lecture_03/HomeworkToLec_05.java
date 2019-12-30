@@ -12,24 +12,30 @@ public class HomeworkToLec_05 {
 
 		int salary = scan.nextInt();
 
-		scan.close();
+		if (salary <= 0) {
+			
+			salary = scan.nextInt();
 
-		if (salary <= 23000) {
-
-			double toPee = salary / 10;
+		} else if (salary <= 23000) {
+			double toPee = salary * 0.1;
 			double salaryAfterDeduction = salary - toPee;
 			System.out.println(+salaryAfterDeduction);
 
-			/*
-			 * if (raisedSalary <= 6000) System.out.println("Your a good employee");
-			 * System.out.println("your salary up to:" + raisedSalary);
-			 * 
-			 * double newSalary = raisedSalary + salary;
-			 * System.out.println("your salary now:" + newSalary);
-			 * 
-			 * } else {
-			 * System.out.println("We're sorry, but the provided salary is invalid");
-			 */}
-	}
+		} else if (salary >= 23_000 && salary <= 50_000) {
+			double toPee = salary * 0.2;
+			double salaryAfterDeduction = salary - toPee;
+			System.out.println(+salaryAfterDeduction);
 
+		} else if (salary >= 50_000 && salary <= 100_000) {
+			double toPee = salary * 0.3;
+			double salaryAfterDeduction = salary - toPee;
+			System.out.println(+salaryAfterDeduction);
+		} else {
+			double toPee = salary * 0.4;
+			double salaryAfterDeduction = salary - toPee;
+			System.out.println(+salaryAfterDeduction);
+	
+			scan.close();
+		}
+	}
 }
